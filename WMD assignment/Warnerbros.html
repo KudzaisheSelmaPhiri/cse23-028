@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/Warnerbros.css">
+<title>Warnerbros</title>
+</head>
+<body >
+  <header class="header">
+    <a href="#" class="logo"> Warnerbros</a> 
+    <nav class="navbar">
+      <a href="#"> Home</a>
+      <a href="Movies.html">Movies</a>
+      <a href="Tv Shows.html"> Tv Shows</a>
+      <a href="Games and Apps.html"> Games and Apps</a>
+      <a href="Collections.html"> Collections </a>
+      <a href="Feedback.html"> Feedback</a>
+    </nav>
+    <form action="" class="search-container">
+        <input type="text" placeholder="Search...." id="searchInput" onkeyup="searchFunction()"></input>
+       
+        <img src="magnifying-glass.png" class="search"></img>
+       </form>
+       <a href="#" class="singup-container">Sign up</a>
+       <a href="#" class="singup-container">Login</a>
+    </header>
+
+
+
+    
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1/3</div>
+  <img src="Movies/CreedFactsnet.jpg" style="width:100%">
+  <div class="text">Creed</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Tv Shows/The Chosen Angel Studios .jpg" style="width:100%">
+  <div class="text">The Chosen</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Tv Shows/SuitsTvinsider.jpg" style="width:100%">
+  <div class="text">Suits</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+</script>
+
+<a href="Movies.html" class="link"><h6>Movies</h6></a>
+<div class="gallery">
+  <a target="_blank" href="Damsel.html">
+      <img src="Movies/DamselGollancz.jpg" alt="Damsel">
+  </a>
+  <div class="description">Damsel</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Aquaman.html">
+      <img src="Movies/Aquaman 2.jpg" alt="Aquaman">
+  </a>
+  <div class="description">Aquaman</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Avengers Endgame.html">
+      <img src="Movies/Avengers Endgame Amazon.jpg" alt="Avengers Endgame">
+  </a>
+  <div class="description">Avengers Endgame</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Justice League.html">
+      <img src="Movies/justiceleagueWarnerbros.jpg" alt="Justice League">
+  </a>
+  <div class="description">Justice League </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Heart of stone.html">
+      <img src="Movies/heartofstoneTheMovieDatabase.jpg" alt="Heart of stone">
+  </a>
+  <div class="description">Heart of stone</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Barbie.html">
+      <img src="Movies/Barbie.jpg" alt="Barbie">
+  </a>
+  <div class="description">Barbie </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Wonder.html">
+      <img src="Movies/Wonder IMDb.jpg" alt="Wonder">
+  </a>
+  <div class="description">Wonder</div>
+</div>
+
+<a href="#" class="link"><h6>Tv Shows</h6></a>
+<div class="gallery">
+  <a target="_blank" href="Tv Shows/Friends IMDb.jpg">
+      <img src="Tv Shows/Friends IMDb.jpg" alt="Friends">
+  </a>
+  <div class="description">Friends</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Tv Shows/NeverhaveIEver.jpg">
+      <img src="Tv Shows/NeverhaveIEver.jpg" alt="Never have I ever">
+  </a>
+  <div class="description">Never have I ever</div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="Tv Shows/thechosen.jpg">
+      <img src="Tv Shows/thechosen.jpg" alt="The Chosen">
+  </a>
+  <div class="description">The Chosen</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="Tv Shows/FullerhousePeople.jpg">
+      <img src="Tv Shows/FullerhousePeople.jpg" alt="Fuller House">
+  </a>
+  <div class="description">Fuller House</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Tv Shows/HengrydangerIMDb.jpg">
+      <img src="Tv Shows/HengrydangerIMDb.jpg" alt="Suits">
+  </a>
+  <div class="description">Hengry Danger</div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="Tv Shows/The100RottenTomatoes.jpg">
+      <img src="Tv Shows/The100RottenTomatoes.jpg" alt="The 100">
+  </a>
+  <div class="description">The 100</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="Tv Shows/izombieWikifandom.jpg">
+      <img src="Tv Shows/izombieWikifandom.jpg" alt="The Furies">
+  </a>
+  <div class="description">Izombie</div>
+</div>
+
+<a href="#" class="link"><h6>Games and Apps</h6></a>
+
+
+<div class="gallery">
+  <a target="_blank" href="Games and Apps/dcinfinite.jpg">
+      <img src="Games and Apps/dcinfinite.jpg" alt="DC Infinte">
+  </a>
+  <div class="description">DC Infinte</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Games and Apps/shoutrageous.jpg">
+      <img src="Games and Apps/shoutrageous.jpg" alt="Shoutrageous">
+  </a>
+  <div class="description">Shoutrageous!! </div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="Games and Apps/pubg mobile.jpg">
+      <img src="Games and Apps/pubg mobile.jpg" alt="Pubg mobile">
+  </a>
+  <div class="description">Pubg mobile</div>
+</div> 
+
+<div class="gallery">
+  <a target="_blank" href="Games and Apps/CartoonetworkCartoonnetwork.jpg">
+      <img src="Games and Apps/CartoonetworkCartoonnetwork.jpg" alt="Cartoon Network">
+  </a>
+  <div class="description">Cartoon Network</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Games and Apps/CNNGoogleplay.jpg">
+      <img src="Games and Apps/CNNGoogleplay.jpg" alt="CNN">
+  </a>
+  <div class="description">CNN</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Games and Apps/HeadsupGoogleplay.jpg">
+      <img src="Games and Apps/HeadsupGoogleplay.jpg" alt="Heads Up!">
+  </a>
+  <div class="description">Heads Up!</div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="Games and Apps/HBOmaxPinterest.jpg">
+      <img src="Games and Apps/HBOmaxPinterest.jpg" alt="HBOmax">
+  </a>
+  <div class="description">HBOmax</div>
+</div>
+
+
+<h6>Recent Movies and Shows</h6>
+<div class="gallery">
+  <a target="_blank" href="Tv Shows/mrandmrssmithIMDb.jpg">
+      <img src="Tv Shows/mrandmrssmithIMDb.jpg" alt="Mr and Mrs Smith">
+  </a>
+  <div class="description">Mr and Mrs Smith</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Tv Shows/furies.jpg">
+      <img src="Tv Shows/furies.jpg" alt="Furies">
+  </a>
+  <div class="description">Furies </div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="Tv Shows/griselda.jpg">
+      <img src="Tv Shows/griselda.jpg" alt="Griselda">
+  </a>
+  <div class="description">Griselda </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Movies/Theideaofyou.jpg">
+      <img src="Movies/Theideaofyou.jpg" alt="The idea of you">
+  </a>
+  <div class="description">The idea of you</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Tv Shows/thebrotherssun.jpg">
+      <img src="Tv Shows/thebrotherssun.jpg" alt="">
+  </a>
+  <div class="description">The Brothers sun</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Movies/DunePartTwoDeadline.jpg">
+      <img src="Movies/DunePartTwoDeadline.jpg" alt="Dune Part2">
+    </a>
+      <div class="description">Dune Part2</div>
+ 
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Movies/Challengersebay.jpg">
+      <img src="Movies/Challengersebay.jpg" alt="Challengers">
+    </a>
+      <div class="description">Challengers</div>
+   
+</div>
+
+
+
+<footer>
+  <div class="social-icon">
+    <a href="https://web.facebook.com/warnerbrosent"><img alt="Facebook" src="facebook.png" ></a>
+    <a href="https://www.instagram.com/warnerbrostv/"><img alt="Instagram" src="instagram.png" ></a>
+    <a href="https://twitter.com/warnerbros?lang=en"><img alt="Twitter" src="twitter.png" ></a>
+    <a href="https://www.youtube.com/@WarnerBrosPictures"><img alt="Youtube" src="youtube.png" ></a>
+    <a href="https://www.pinterest.com/warnerbrosent/"><img alt="Pinterest" src="pinterest.png" ></a>
+     </div>
+  &copy;2024 Kudzaishe Selma Phiri
+</footer>
+</body>
+</html> 

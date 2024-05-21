@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Feedback.css">
+    <title>Feedback</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"> Warnerbros</a> 
+        <nav class="navbar">
+          <a href="Warnerbros.html"> Home</a>
+          <a href="Movies.html">Movies</a>
+          <a href="Tv Shows.html"> Tv Shows</a>
+          <a href="Games and Apps.html"> Games and Apps</a>
+          <a href="Collections.html"> Collections </a>
+          <a href="Feedback.html"> Feedback</a>
+        </nav>
+        <form action="" class="search-container">
+            <input type="text" placeholder="Search...." id="searchInput" onkeyup="searchFunction()"></input>
+            <img src="magnifying-glass.png"></img>
+           </form>
+           <a href="#" class="singup-container">Sign up</a>
+           <a href="#" class="singup-container">Login</a>
+        </header>
+ 
+ 
+    
+<form>
+  
+    <table>
+        <tr>
+            <th colspan="2" class="heading">Customer Information</th>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name" placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email " name="email" placeholder="Enter email address"></td>
+        </tr>
+        <tr>
+            <td>Phone Number:</td>
+            <td><input type="tel" name="phone" placeholder="Enter your phone number"></td>
+        </tr>
+        <tr>
+            <td>Feedback Type:</td>
+            <td>
+                <select name="feedback_type" >
+                    <option value="general">General</option>
+                    <option value="complaint">Complaint</option>
+                    <option value="suggestion">Suggestion</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Message:</td>
+            <td><textarea name="message" rows="4"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+</form>
+            
+
+
+    <h2>WELCOME TO OUR FEEDBACK PAGE !!!.WE WOULD LIKE TO HEAR FROM YOU</h2>
+
+
+
+<p></p>   
+
+<script>
+    function searchFunction() {
+        var input, filter, ul, li, txtValue;
+        input = document.getElementById('searchInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById('searchResults');
+        li = ul.getElementsByTagName('li');
+    
+        // Loop through all list items, and hide those that don't match the search query
+        for (var i = 0; i < li.length; i++) {
+            txtValue = li[i].textContent || li[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = '';
+            } else {
+                li[i].style.display = 'none';
+            }
+        }
+    }
+    </script>
+
+    <footer>
+  <div class="social-icon">
+    <a href="https://web.facebook.com/warnerbrosent"><img alt="Facebook" src="facebook.png" ></a>
+    <a href="https://www.instagram.com/warnerbrostv/"><img alt="Instagram" src="instagram.png" ></a>
+    <a href="https://twitter.com/warnerbros?lang=en"><img alt="Twitter" src="twitter.png" ></a>
+    <a href="https://www.pinterest.com/warnerbrosent/"><img alt="Pinterest" src="pinterest.png" ></a>
+     </div>
+  &copy;2024</footer>  
+</body>
+</html>

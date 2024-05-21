@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+     min-height: 5000%;
+    }
+
+    .header{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        padding: 10px 13%;
+        background:aliceblue;
+        display: flex;
+        justify-content:space-between ;
+        align-items: center;
+        z-index:100 ;
+      
+      }
+      
+      .navbar a{
+        position: relative;
+        font-size: 16px;
+        color:black;
+        margin-right: 30px;
+        text-decoration: none;
+      }
+      
+      .navbar a::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        width:100%;
+        height: 4px;
+        background:black  ;
+        bottom: -5px;
+        border-radius: 5px;
+        transform: translateY(10px);
+        opacity:0 ;
+        transition: .5s ease;
+      }
+      
+      .navbar a:hover:after{
+        transform: translateY(0);
+        opacity: 1;
+      
+      }
+      
+      .search-container{
+        position: relative;
+      }
+      
+      .search-container input{
+        width: 150px;
+        font-size: 12px;
+        padding: 10px 5px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0px 2px 5px rgba(0,0, 0, 0.2);
+      }
+      
+      .singup-container{
+        width: 60px;
+        font-size: 12px;
+        padding: 10px 5px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0px 2px 5px rgba(0,0, 0, 0.2);
+        text-decoration: none;
+        color: black;
+      
+      }
+      
+      a.logo{
+        text-align: left;
+        font-size: 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      
+      .social-icon a img{
+        padding-top: 14px;
+        color: #fff;
+        font-size: 24px;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: .5s ease;
+      
+      }
+      .social-icon a:hover img{
+        transform: scale(1.2);
+      
+      
+      }
+
+.container {
+width: 70%;
+background-color: #fff;
+border: 2px solid #333;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+overflow: hidden;
+padding-top: 70px;
+}
+
+header {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 10px 0;
+border-bottom: 2px solid #444;
+}
+
+header h1 {
+margin: 0;
+font-size: 2em;
+}
+
+.main-content {
+display: flex;
+padding: 20px;
+gap: 20px;
+}
+
+.tvshow-poster img {
+width: 300px;
+border: 2px solid #ddd;
+border-radius: 5px;
+}
+
+.tvshow-details {
+flex-grow: 1;
+border-left: 2px solid #ddd;
+padding-left: 20px;
+}
+
+.tvshow-details h2 {
+margin-top: 0;
+}
+
+.tvshow-details p {
+margin: 10px 0;
+line-height: 1.6;
+}
+
+.tvshow-details p strong {
+font-weight: bold;
+}
+
+button a{
+text-decoration: none;
+font-weight: bold;
+font-size: medium;
+color: #333;
+font-size: 15px;
+padding: 10px 5px;
+border-radius: 10px;
+
+box-shadow: 0px 2px 5px rgba(0,0, 0, 0.2);
+text-decoration: none;
+color: black;
+
+}
+
+button{
+    border: none;
+    background-color:white;
+}
